@@ -19,7 +19,11 @@ export default function Home() {
         </div>
         <div className={styles.favList}>
           {favList.map((item, index) => (
-            <section className={styles.favListItem} key={index}></section>
+            <section
+              className={styles.favListItem}
+              key={index}
+              onClick={() => router.push('/dataHandle')}
+            ></section>
           ))}
         </div>
       </div>
