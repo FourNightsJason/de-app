@@ -1,0 +1,10 @@
+.nav {
+  @apply fixed top-0;
+  @apply w-full h-11 px-5;
+  @apply flex justify-end items-center;
+  @apply bg-[#ddd];
+  @apply text-2xl;
+  & > * {
+    @apply cursor-pointer;
+  }
+}

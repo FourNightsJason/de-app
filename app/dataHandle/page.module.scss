@@ -1,0 +1,23 @@
+.dataHandle {
+  @apply w-4/5 h-3/5;
+  @apply absolute top-0 bottom-0 left-0 right-0 m-auto;
+  @apply flex flex-col gap-3;
+  .header {
+    @apply flex justify-between items-center;
+    .title {
+      @apply text-xl;
+    }
+  }
+  .data {
+    @apply flex-1;
+  }
+}
+.viewData {
+  .conflict {
+    background: lightcoral;
+  }
+  .same {
+    background: lightgoldenrodyellow
+    ;
+  }
+}

@@ -1,0 +1,24 @@
+.home {
+  @apply h-screen w-screen;
+  @apply relative;
+  .contain {
+    @apply w-3/5 h-fit;
+    @apply absolute top-0 bottom-0 left-0 right-0 m-auto;
+    .title {
+      @apply text-center text-white text-9xl;
+      text-shadow: 1px 1px 1px black;
+    }
+    .favList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px 0;
+      .favListItem {
+        height: 100px;
+        flex: 0 1 calc(25% - 10px);
+        border: 1px solid black;
+        margin: 5px;
+      }
+    }
+  }
+}

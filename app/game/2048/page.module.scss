@@ -1,0 +1,32 @@
+.game2048 {
+  .gamebox {
+    @apply w-96 h-96 rounded-lg;
+    @apply bg-gray-500;
+    @apply border-4;
+    @apply flex flex-wrap;
+    @apply relative;
+    .grid {
+      @apply w-1/4 h-1/4 border-4 rounded-sm;
+      @apply bg-red-200;
+    }
+  }
+}
+
+.block {
+  @apply w-1/4 h-1/4;
+  @apply bg-yellow-300 text-gray-400;
+  @apply border-4 rounded-sm;
+  @apply absolute;
+  @apply flex flex-wrap items-center;
+  & > * {
+    @apply w-1/4;
+    @apply text-center;
+    &.active {
+      @apply text-black;
+    }
+  }
+  & > :nth-child(-n + 3),
+  & > :nth-last-child(-n + 3) {
+    @apply w-1/3;
+  }
+}
